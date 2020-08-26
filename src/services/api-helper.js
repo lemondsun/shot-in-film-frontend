@@ -13,7 +13,7 @@ export const getAllPhotos = async () => {
 }
 
 export const uploadPhoto = async (formData) => {
-  const resp = await api.post('/photos', formData)
+  await api.post('/photos', formData)
 }
 
 export const deletePhoto = async (photoId) => {

@@ -20,12 +20,11 @@ class App extends Component {
     this.setState({
       allPhotos,
     });
-    
+
     let latestPosts = getNewestPost(this.state.allPhotos);
     this.setState({
       latestPosts,
     });
-   console.log(this.state.allPhotos)
   }
 
   render() {
@@ -48,7 +47,11 @@ class App extends Component {
           path="/portfolio"
           render={() => <Portfolio allPhotos={this.state.allPhotos} />}
         />
-        <Route exact path="/upload" render={() => <ImageUploadPage />} />
+        <Route
+          exact
+          path="/upload"
+          render={() => <ImageUploadPage />}
+        />
       </div>
     );
   }
