@@ -28,7 +28,10 @@ import { withRouter } from "react-router";
          <h3> <span>J</span>essica <span>B</span>allou </h3>
       </Link>
       <Link to={'/portfolio'} id="header-sub-title">
-          IN FILM
+        IN FILM
+      </Link>
+      <Link to={'/upload'}>
+        upload
       </Link>
     </div>
   );
