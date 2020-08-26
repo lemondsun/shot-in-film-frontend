@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+body {
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*------------ App ---------------*/
+
+.app {
+  background-color: #eae7dc;
+  margin: 0px;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*---------- home --------------*/
+
+
+#header-title h3{
+  display: inline;
+  position: absolute;
+  top: 30vh;
+  left: 40vw;
+  color: #e85a4f;
+  font-family: 'Varela', sans-serif;
+  margin: 0vh 0vw 0vh 2vw;
+  font-weight: bolder;
+  font-size: 2.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#header-title:hover h3{
+  color: black;
+}
+
+a#header-title  {
+  text-decoration-line: none;
+}
+
+#header-title span{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#header-sub-title {
+  position: absolute;
+  top: 38vh;
+  left: 45vw;
+  color: #e85a4f;
+  font-family: 'Varela', sans-serif;
+  margin: 0vh 0vw 0vh 2vw;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+a#header-sub-title  {
+  text-decoration-line: none;
+}
+
+a#header-sub-title:hover {
+  color: black;
+}
+
+/* sets the height for the home page img container
+so that the img won't stretch the screen */
+.w-100{
+  height:100vh;
+}
+
+img {
+object-fit: cover;
+}
+
+/*---------------  Portfolio -----------------*/
+
+#main-page-section {
+  margin-top: 8vh;
+}
+
+div .ReactGridGallery_title-viewpoint img {
+  object-fit: cover;
+}
+
+/*---------------  Header -----------------*/
+
+header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  font-family: 'Varela', sans-serif;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100vw;
+  height: 8vh;
+}
+
+header :hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#header-menu {
+  padding-left: 35vw;
+  list-style-type: none;
+  display: flex;
+}
+
+a.header-tab {
+  color: #e85a4f;
+  text-decoration: none;
+  margin: 2vw 5vw;
+}
+
+a.header-tab :hover {
+  color:black;
+  display: inline;
+  text-decoration: none;
+  text-emphasis: none;
+}
+
+/*---------------  Upload Page  -----------------*/
+
+#upload-section  {
+  margin-top: 8vh;
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 60vw;
+  margin-left: 20vw;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*---------------  Upload Page  -----------------*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+
+  a#header-title h3{
+    position: absolute;
+    top: 7vh;
+    left: 20vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  a#header-title span{
+    font-size: 1.5em;
+    font-weight: bold;
   }
+
+  a#header-sub-title {
+    text-decoration-line: none;
+    position: absolute;
+    top: 15vh;
+    left: 40vw;
+    font-size: 1em;
+  }
+
+  #header-menu{
+    padding-left:28vw;
+  }
+
+
 }
