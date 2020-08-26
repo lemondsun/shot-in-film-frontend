@@ -17,7 +17,7 @@ body {
   display: inline;
   position: absolute;
   top: 30vh;
-  left: 40vw;
+  left: 42vw;
   color: #e85a4f;
   font-family: 'Varela', sans-serif;
   font-weight: bolder;
@@ -130,7 +130,7 @@ a.header-tab :hover {
   a#header-title h3{
     position: absolute;
     top: 7vh;
-    left: 15vw;
+    left: 16vw;
   }
 
   a#header-title span{

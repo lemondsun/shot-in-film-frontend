@@ -23,13 +23,7 @@ import { withRouter } from "react-router";
           ))
      }
       </Carousel>
-      
-     {/* <ul id='menu'>
-        <Link to={'/portfolio'} className="menu-tab" data-name='works-tab'>
-            PORTFOLIO
-            </Link>
-      
-    </ul>*/}
+    
       <Link to={'/portfolio'} data-name="header-title" id="header-title">
          <h3> <span>J</span>essica <span>B</span>allou </h3>
       </Link>

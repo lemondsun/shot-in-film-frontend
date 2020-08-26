@@ -48,7 +48,6 @@ class App extends Component {
           render={() => <Portfolio allPhotos={this.state.allPhotos} />}
         />
         <Route
-          exact
           path="/upload"
           render={() => <ImageUploadPage />}
         />
