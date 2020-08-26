@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import { withRouter } from "react-router";
 import {uploadPhoto} from '../services/api-helper'
 import Header from './Header'
 
-export default class ImageUploadPage extends Component {
+class ImageUploadPage extends Component {
   state = {
     formData: {
       title: '',
@@ -57,3 +58,5 @@ export default class ImageUploadPage extends Component {
     )
   }
 }
+
+export default withRouter(ImageUploadPage);
