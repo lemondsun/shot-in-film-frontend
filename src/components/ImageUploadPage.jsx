@@ -35,7 +35,7 @@ class ImageUploadPage extends Component {
   // adds this.state.selectedFile (users selected image) to this.state.formData
   // saves formData to the data base
  uploadHandler = () => {
-  this.setState.formData.src = `${this.state.selectedFile}`
+  this.state.formData.src = `${this.state.selectedFile}`
   uploadPhoto(this.state.formData)
 }
 
