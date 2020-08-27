@@ -36,7 +36,8 @@ class ImageUploadPage extends Component {
   // saves formData to the data base
  uploadHandler = () => {
   this.state.formData.src = `${this.state.selectedFile}`
-  uploadPhoto(this.state.formData)
+   uploadPhoto(this.state.formData)
+   this.props.history.push('/')
 }
 
   render() {

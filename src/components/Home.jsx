@@ -30,9 +30,6 @@ import { withRouter } from "react-router";
       <Link to={'/portfolio'} id="header-sub-title">
         IN FILM
       </Link>
-      <Link to={'/upload'}>
-        upload
-      </Link>
     </div>
   );
  }
