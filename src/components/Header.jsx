@@ -10,12 +10,6 @@ export default function Header() {
             home
         </li>
         </Link>
-        <Link to='/portfolio' className='header-tab' >
-        <li>
-            portfolio
-      </li>
-        </Link>
-        
       </ul>
     </header>
   )
