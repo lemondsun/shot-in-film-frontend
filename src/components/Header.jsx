@@ -7,7 +7,7 @@ export default function Header() {
       <ul id='header-menu'>
         <Link  to='/' className='header-tab' >
         <li>
-            home
+            Home
         </li>
         </Link>
       </ul>

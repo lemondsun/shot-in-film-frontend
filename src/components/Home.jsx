@@ -24,11 +24,16 @@ import { withRouter } from "react-router";
      }
       </Carousel>
     
-      <Link to={'/portfolio'} data-name="header-title" id="header-title">
-         <h3> <span>J</span>essica <span>B</span>allou </h3>
-      </Link>
-      <Link to={'/portfolio'} id="header-sub-title">
+     
+      <h3 data-name="header-title" id="header-title">
+        <span>J</span>essica <span>B</span>allou
+        </h3>
+      
+      <h3 to={'/portfolio'} id="header-sub-title">
         IN FILM
+      </h3>
+      <Link to={'/portfolio'} >
+        <button id='portfolio-button'>portfolio</button>
       </Link>
     </div>
   );
