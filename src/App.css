@@ -132,15 +132,23 @@ a.header-tab :hover {
   text-emphasis: none;
 }
 
-/*---------------  Upload Page  -----------------*/
+/*--------------- Loading Page  -----------------*/
 
-#upload-section  {
-  margin-top: 8vh;
-  padding-top: 8vh;
-  display: flex;
-  flex-direction: column;
-  width: 60vw;
-  margin-left: 20vw;
+#loading-text {
+  color: #e85a4f;
+  font-family: 'Varela', sans-serif;
+  font-size: 1.5em;
+  position: absolute;
+  top: 40vh;
+  margin-left: 46vw;
+}
+
+#loading-dots {
+  width: 20vw;
+  height: 20vh;
+  position: absolute;
+  top: 40vh;
+  margin-left: 42vw;
 }
 
 /*---------------  Upload Page  -----------------*/
@@ -176,6 +184,10 @@ a.header-tab :hover {
     height: 6vh;
     width: 30vw;
     background-color: rgba(254, 254, 254, 0.064);
+  }
+
+  #loading-text {
+    margin-left: 35vw;
   }
 
 }

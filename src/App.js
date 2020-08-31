@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import ImageUploadPage from "./components/ImageUploadPage";
+import LoadingScreen from "./components/LoadingScreen"
 import { withRouter } from "react-router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { getNewestPost } from "./components/getNewestPost";
@@ -39,7 +40,7 @@ class App extends Component {
             />
           </div>
         ) : (
-          <></>
+          <LoadingScreen/>
         )}
 
         <Route
