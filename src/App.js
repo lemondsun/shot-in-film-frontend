@@ -2,18 +2,23 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import PropTypes from "prop-types";
 import Home from "./components/Home";
-import Portfolio from "./components/Portfolio";
-import ImageUploadPage from "./components/ImageUploadPage";
 import LoadingScreen from "./components/LoadingScreen"
 import { withRouter } from "react-router";
+import Menu from './components/Menu';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { getNewestPost } from "./components/getNewestPost";
 import { getAllPhotos } from "./services/api-helper";
+import Footer from "./components/Footer"
 import "./App.css";
 
 class App extends Component {
   state = {
     allPhotos: null,
+    open: false,
+  };
+  handleToggle = () => {
+    this.setState(state => ({ open: !state.open }));
+    console.log(this.state)
   };
 
   async componentDidMount() {
@@ -31,27 +36,25 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        {this.state.latestPosts ? (
+        
+        {
+          //this creates a loading screen to deal with delays getting photos from heroku
+          this.state.latestPosts ? (
           <div>
             <Route
               exact
               path="/"
-              render={() => <Home latestPosts={this.state.latestPosts} />}
+                render={() => <Home
+                  latestPosts={this.state.latestPosts}
+                  open={this.state.open}
+                  handleToggle={this.handleToggle}
+                  allPhotos={this.state.allPhotos}
+                />}
             />
           </div>
         ) : (
           <LoadingScreen/>
         )}
-
-        <Route
-          exact
-          path="/portfolio"
-          render={() => <Portfolio allPhotos={this.state.allPhotos} />}
-        />
-        <Route
-          path="/upload"
-          render={() => <ImageUploadPage />}
-        />
       </div>
     );
   }

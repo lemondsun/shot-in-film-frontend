@@ -2,6 +2,11 @@ import React from 'react'
 import Gallery from 'react-grid-gallery';
 
 export default function PhotoGallery(props) {
+<<<<<<< HEAD
+=======
+
+  
+>>>>>>> main
   const IMAGES = props.allPhotos.map((post) => (
    { src: post.src,
         thumbnail: post.src,
